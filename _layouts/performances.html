@@ -5,13 +5,13 @@
   <body>
     {% include nav.html %}
       <div class="container">
-  {% assign intro = site.data.intros.publications[page.language] %}
+  {% assign intro = site.data.intros.performances[page.language] %}
         <div class="Page-header">
           <h3>{{ intro.journal_article }}</h3>
         </div>
         <hr>
-  {% assign sorted_publications = site.data.publications | sort %}
-  {% for pub in sorted_publications reversed %}
+  {% assign sorted_performances = site.data.performances | sort %}
+  {% for pub in sorted_performances reversed %}
     {% assign publication = pub[1] %}
     {% if publication.type == 'article-journal' %}
         <blockquote>
@@ -35,7 +35,7 @@
           <h3>{{ intro.book_chapter }}</h3>
         </div>
         <hr>  
-  {% for pub in sorted_publications reversed %} 
+  {% for pub in sorted_performances reversed %} 
     {% assign publication = pub[1] %}
     {% if publication.type == 'book-chapter' %}
         <blockquote>
