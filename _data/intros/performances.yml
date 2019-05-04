@@ -1,10 +1,14 @@
 en:
-  title: How can I help you?
-  credential: Harpist
-  content: >
-    How can I help you?
+  journal_article: Journal Articles
+  bachelor_thesis: Bachelor's Thesis
+  master_thesis: Master's Thesis
+  doctoral_thesis: Doctoral Thesis
+  book_chapter: Book Chapters
+  url: Source
 pl-PL:
-  title: W czym mogę pomóc?
-  credential: Harfistka
-  content: >
-    W czym mogę pomóc?
+  journal_article: Artigos em Periódicos Indexados
+  bachelor_thesis: Trabalho de Conclusão de Curso
+  master_thesis: Dissertação de Mestrado
+  doctoral_thesis: Tese de Doutorado
+  book_chapter: Capítulos de Livro
+  url: Fonte
