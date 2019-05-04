@@ -1,0 +1,36 @@
+en:
+  title: 'Title'
+  date-string: 'from 2005 to 2013.'
+  image: '/media/eep/logo.jpg'
+  style: 'section-end'
+  description: >
+    Long description.
+  
+  extras: |
+    <p>ddddd:</p>
+    <blockquote>
+      <div class="self-font">Title  
+      <i>dddd</i>, pub.</div>
+      <hr>
+      <ul class="list-inline">
+        <li><a href="http://some.url">Name</a></li>
+      </ul> 
+    </blockquote> 
+pl-PL:
+  title: 'Tytul'
+  date-string: 'od 2005 do 2013.'
+  image: '/media/eep/logo.jpg'
+  style: 'section-end'
+  description: >
+    Opis dluugi.
+  
+  extras: |
+    <p>ddddd:</p>
+    <blockquote>
+      <div class="self-font">Tytul  
+      <i>dddd</i>, wyd.</div>
+      <hr>
+      <ul class="list-inline">
+        <li><a href="http://jakis.url">Nazwa</a></li>
+      </ul> 
+    </blockquote> 
