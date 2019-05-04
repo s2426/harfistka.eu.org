@@ -22,3 +22,4 @@ defaults:
       path: ""
     values:
       author: 's2426'
+theme: jekyll-theme-cayman
