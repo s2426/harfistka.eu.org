@@ -24,3 +24,13 @@ defaults:
       path: ""
     values:
       author: 's2426'
+  -
+    scope:
+      path: 'pl'
+    values:
+      language: pl
+  -
+    scope:
+      path: 'en'
+    values:
+      language: en
