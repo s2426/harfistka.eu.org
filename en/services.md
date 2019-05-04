@@ -1,5 +1,5 @@
 ---
 title: Services
 layout: services
-pl: /portfolio/pl/services.html
+pl-PL: /portfolio/pl-PL/services.html
 ---

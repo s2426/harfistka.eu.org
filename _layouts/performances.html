@@ -12,19 +12,19 @@
         <hr>
   {% assign sorted_performances = site.data.performances | sort %}
   {% for pub in sorted_performances reversed %}
-    {% assign publication = pub[1] %}
-    {% if publication.type == 'article-journal' %}
+    {% assign performance = pub[1] %}
+    {% if performance.type == 'article-journal' %}
         <blockquote>
           <div class="self-font">
-            <div>{{ publication[page.language].html | replace: '..','.' | replace: '  ',' '}}</div>
+            <div>{{ performance[page.language].html | replace: '..','.' | replace: '  ',' '}}</div>
           </div>
           <hr>
           <ul class="list-inline">
-            <li><a href="{{ publication.url }}">{{ intro.url }}</a></li>
-      {% if publication.doi != null %}
+            <li><a href="{{ performance.url }}">{{ intro.url }}</a></li>
+      {% if performance.doi != null %}
             <li><p>|</p></li>
             <li><p>Altmetric:</p></li>
-            <li><div data-badge-popover="right" data-badge-type="bar" data-doi="{{ publication.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div></li>
+            <li><div data-badge-popover="right" data-badge-type="bar" data-doi="{{ performance.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div></li>
       {% endif %}
           </ul>         
         </blockquote> 
@@ -36,34 +36,34 @@
         </div>
         <hr>  
   {% for pub in sorted_performances reversed %} 
-    {% assign publication = pub[1] %}
-    {% if publication.type == 'book-chapter' %}
+    {% assign performance = pub[1] %}
+    {% if performance.type == 'book-chapter' %}
         <blockquote>
           <div class="self-font">
-            <div>{{ publication[page.language].html | replace: '..','.' | replace: '  ',' '}}</div>
+            <div>{{ performance[page.language].html | replace: '..','.' | replace: '  ',' '}}</div>
           </div>
           <hr>
           <ul class="list-inline">
-            <li><a href="{{ publication.url }}">{{ intro.url }}</a></li>
-      {% if publication.doi != null %}
+            <li><a href="{{ performance.url }}">{{ intro.url }}</a></li>
+      {% if performance.doi != null %}
             <li><p>|</p></li>
             <li><p>Altmetric:</p></li>
-            <li><div data-badge-popover="right" data-badge-type="bar" data-doi="{{ publication.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div></li>
+            <li><div data-badge-popover="right" data-badge-type="bar" data-doi="{{ performance.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div></li>
       {% endif %}
           </ul>         
         </blockquote>
     {% endif %}
         
-    {% if publication.type == 'bachelor-thesis' %}
-      {% assign bachelor_thesis = publication %}
+    {% if performance.type == 'bachelor-thesis' %}
+      {% assign bachelor_thesis = performance %}
     {% endif %}
 
-    {% if publication.type == 'master-thesis' %}
-      {% assign master_thesis = publication %}
+    {% if performance.type == 'master-thesis' %}
+      {% assign master_thesis = performance %}
     {% endif %}
         
-    {% if publication.type == 'doctoral-thesis' %}
-      {% assign doctoral_thesis = publication %}
+    {% if performance.type == 'doctoral-thesis' %}
+      {% assign doctoral_thesis = performance %}
     {% endif %}
   {% endfor %}
   

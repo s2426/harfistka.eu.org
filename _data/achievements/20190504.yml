@@ -3,7 +3,7 @@ en:
   subtitle: 'Makumba'
   header: "Album"
   date-string: '3 may 2019'
-  icon: 'fas fa-sun'
+  icon: ''
   description: >
     English please.
   widget: |
@@ -23,7 +23,7 @@ pl-PL:
   subtitle: 'Makumba'
   header: "Album"
   date-string: '3 maja 2019'
-  icon: 'fas fa-sun'
+  icon: ''
   description: >
     Po polskiemu.
   widget: |
