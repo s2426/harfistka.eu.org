@@ -1,3 +1,5 @@
+yarray: []
+mpaginate: 3
 year: 2019
 author: 's2426'
 url: http://www.harfistka.eu.org
@@ -16,10 +18,18 @@ exclude: ['.gitignore',
           'vendor',
           'tests.html'
           ]
-defaults:
   -
     scope:
-      path: ""
+      path: ''
     values:
       author: 's2426'
-theme: jekyll-theme-cayman
+  -
+    scope:
+      path: 'pl-pl'
+    values:
+      language: pl-PL
+  -
+    scope:
+      path: 'en'
+    values:
+      language: en
