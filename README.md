@@ -8,7 +8,7 @@ This site uses [Bootstrap](http://getbootstrap.com/)!
 ... And [Jekyll](http://jekyllrb.com/) too!
  - layouts and includes examples;
  - uses GitHub markdown;
- - boolean multilanguange support (en/pt-br);
+ - boolean multilanguange support (en/pl);
  - uses `_data` for advanced Templating.
  - sitemap Template with multilanguage support;
 

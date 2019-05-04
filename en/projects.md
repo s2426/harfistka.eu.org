@@ -1,5 +1,5 @@
 ---
 title: Projects
 layout: projects
-pl: /portfolio/pl-pl/projects.html
+pl: /portfolio/pl/projects.html
 ---

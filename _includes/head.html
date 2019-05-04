@@ -1,11 +1,11 @@
 <!-- Head -->        
 {% if page.language == 'en' %}
   {% capture description %}{{ page.author }}'s Portfolio, {{ page.title }}, harpist.{% endcapture %}
-{% elsif page.language == 'pl-PL' %}
+{% elsif page.language == 'pl' %}
   {% capture description %}Portfolio harfistki: {{ page.author }}, {{ page.title }}.{% endcapture %}
 {% endif %}
 
-{% capture an_image %}{{ site.url }}/media/TODOZMIANY.png{% endcapture %}
+{% capture an_image %}{{ site.url }}/media/s2426-portfolio.png{% endcapture %}
 {% capture LINK %}{{ site.url }}{{ page.url }}{% endcapture %}
 
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/article#">
@@ -25,7 +25,7 @@
     <meta property="og:image:height" content="450">
   {% if page.language == 'en' %}
     <meta property="og:locale" content="en_US">
-  {% elsif page.language == 'pl-PL' %}
+  {% elsif page.language == 'pl' %}
     <meta property="og:locale" content="pl_PL">
   {% endif %}
     <meta property="og:site_name" content="{{ page.author }}'s Portfolio">
