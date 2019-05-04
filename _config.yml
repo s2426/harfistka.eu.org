@@ -26,9 +26,9 @@ defaults:
       author: 's2426'
   -
     scope:
-      path: 'pl'
+      path: 'pl-PL'
     values:
-      language: pl
+      language: pl-PL
   -
     scope:
       path: 'en'

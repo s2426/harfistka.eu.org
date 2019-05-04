@@ -1,7 +1,7 @@
 <!-- Head -->        
 {% if page.language == 'en' %}
   {% capture description %}{{ page.author }}'s Portfolio, {{ page.title }}, harpist.{% endcapture %}
-{% elsif page.language == 'pl' %}
+{% elsif page.language == 'pl-PL' %}
   {% capture description %}Portfolio harfistki: {{ page.author }}, {{ page.title }}.{% endcapture %}
 {% endif %}
 
@@ -25,8 +25,8 @@
     <meta property="og:image:height" content="450">
   {% if page.language == 'en' %}
     <meta property="og:locale" content="en_US">
-  {% elsif page.language == 'pl' %}
-    <meta property="og:locale" content="pl">
+  {% elsif page.language == 'pl-PL' %}
+    <meta property="og:locale" content="pl-PL">
   {% endif %}
     <meta property="og:site_name" content="{{ page.author }}'s Portfolio">
     <meta property="fb:profile_id" content="TODOZMIANY">

@@ -1,5 +1,5 @@
 ---
 title: Contact
 layout: contact
-pl: /portfolio/pl/contact.html
+pl: /portfolio/pl-PL/contact.html
 ---

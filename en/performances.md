@@ -1,5 +1,5 @@
 ---
 title: Performances
 layout: performances
-pl: /portfolio/pl/performances.html
+pl: /portfolio/pl-PL/performances.html
 ---

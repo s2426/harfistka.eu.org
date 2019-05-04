@@ -16,7 +16,7 @@ en:
         <li><a href="http://some.url">Name</a></li>
       </ul> 
     </blockquote> 
-pl:
+pl-PL:
   title: 'Tytul'
   date-string: 'od 2005 do 2013.'
   image: '/media/eep/logo.jpg'

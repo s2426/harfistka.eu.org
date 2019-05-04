@@ -24,7 +24,7 @@ layout: null
   {% endif %}
   {% if page.pt != null %}
     <xhtml:link rel="alternate"
-                hreflang="pl"
+                hreflang="pl-PL"
                 href="{{ site.url }}{{ page.pt }}" />
     <xhtml:link rel="alternate"
                 hreflang="{{ page.language }}"
@@ -54,7 +54,7 @@ layout: null
     <priority>0.7</priority>
   {% if post.pt != null %}
     <xhtml:link rel="alternate"
-                hreflang="pl"
+                hreflang="pl-PL"
                 href="{{ site.url }}{{ post.pt }}" />
     <xhtml:link rel="alternate"
                 hreflang="{{ post.language }}"

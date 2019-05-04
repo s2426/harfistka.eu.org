@@ -1,5 +1,5 @@
 ---
 title: Achievements
 layout: achievements
-pl: /portfolio/pl/achievements.html
+pl: /portfolio/pl-PL/achievements.html
 ---
