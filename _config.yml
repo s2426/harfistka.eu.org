@@ -2,7 +2,7 @@
 mpaginate: 3
 year: 2019
 author: 's2426'
-url: http://www.harfistka.eu.org
+url: http://s2426.github.io/harfistka.eu.org/
 exclude: ['.gitignore',
           'CNAME',
           'Gemfile',
