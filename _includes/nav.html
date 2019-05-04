@@ -28,73 +28,72 @@
               {% when 'Usługi' %}
                 <li class="self-active"><a class="page-scroll" href="#">Usługi</a></li>
                 <li><a href="/pl-pl/projects.html">Projekty</a></li>
-                <li><a href="/pl-pl/performances.html">Występy</a></li>
-                <li><a href="/pl-pl/achievements.html">Osiągnięcia</a></li>
+                <li><a href="/pl-pl/publications.html">Występy</a></li>
+                <li><a href="/pl-pl/achievements.html">Doświadczenie</a></li>
                 <li><a href="/pl-pl/contact.html">Kontakt</a></li>    
 
               {% when 'Projekty' %}
                 <li class="self-highlight"><a href="/pl-pl/services.html">Usługi</a></li>
                 <li class="self-active"><a class="page-scroll" href="#">Projekty</a></li>
-                <li><a href="/pl-pl/performances.html">Występy</a></li>
-                <li><a href="/pl-pl/achievements.html">Osiągnięcia</a></li>
+                <li><a href="/pl-pl/publications.html">Występy</a></li>
+                <li><a href="/pl-pl/achievements.html">Doświadczenie</a></li>
                 <li><a href="/pl-pl/contact.html">Kontakt</a></li>
 
               {% when 'Występy' %}
                 <li class="self-highlight"><a href="/pl-pl/services.html">Usługi</a></li>
                 <li><a href="/pl-pl/projects.html">Projekty</a></li>
                 <li class="self-active"><a href="#">Występy</a></li>
-                <li><a href="/pl-pl/achievements.html">Osiągnięcia</a></li>
+                <li><a href="http://CV.url">Currículo Lattes</a></li>
+                <li><a href="/pl-pl/achievements.html">Doświadczenie</a></li>
                 <li><a href="/pl-pl/contact.html">Kontakt</a></li>
 
-              {% when 'Osiągnięcia' %}
+              {% when 'Doświadczenie' %}
                 <li class="self-highlight"><a href="/pl-pl/services.html">Usługi</a></li>
                 <li><a href="/pl-pl/projects.html">Projekty</a></li>
-                <li><a href="/pl-pl/performances.html">Występy</a></li>
-                <li class="self-active"><a href="#">Osiągnięcia</a></li>
+                <li><a href="/pl-pl/publications.html">Występy</a></li>
+                <li class="self-active"><a href="#">Doświadczenie</a></li>
                 <li><a href="/pl-pl/contact.html">Kontakt</a></li>
 
               {% when 'Kontakt' %}
                 <li class="self-highlight"><a href="/pl-pl/services.html">Usługi</a></li>
                 <li><a href="/pl-pl/projects.html">Projekty</a></li>
-                <li><a href="/pl-pl/performances.html">Występy</a></li>
-                <li><a href="/pl-pl/achievements.html">Osiągnięcia</a></li>
+                <li><a href="/pl-pl/publications.html">Występy</a></li>
+                <li><a href="/pl-pl/achievements.html">Doświadczenie</a></li>
                 <li class="self-active"><a href="#">Kontakt</a></li>
-				
               {% when 'Services' %}
                 <li class="self-active"><a class="page-scroll" href="#">Services</a></li>
                 <li><a href="/en/projects.html">Projects</a></li>
-                <li><a href="/en/performances.html">Performances</a></li>
+                <li><a href="/en/publications.html">Publications</a></li>
                 <li><a href="/en/achievements.html">Achievements</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>    
 
               {% when 'Projects' %}
-				<li class="self-highlight"><a href="/en/services.html">Services</a></li>
                 <li class="self-active"><a class="page-scroll" href="#">Projects</a></li>
-                <li><a href="/en/performances.html">Performances</a></li>
+                <li><a href="/en/publications.html">Publications</a></li>
                 <li><a href="/en/achievements.html">Achievements</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
                 
-              {% when 'Performances' %}
-				<li class="self-highlight"><a href="/en/services.html">Services</a></li>
+              {% when 'Publications' %}
                 <li><a href="/en/projects.html">Projects</a></li>
-                <li class="self-active"><a href="#">Performances</a></li>
+                <li class="self-active"><a href="#">Publications</a></li>
                 <li><a href="/en/achievements.html">Achievements</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
               
               {% when 'Achievements' %}
-				<li class="self-highlight"><a href="/en/services.html">Services</a></li>
                 <li><a href="/en/projects.html">Projects</a></li>
-                <li><a href="/en/performances.html">Performances</a></li>
+                <li><a href="/en/publications.html">Publications</a></li>
                 <li class="self-active"><a href="#">Achievements</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
 
               {% when 'Contact' %}
-				<li class="self-highlight"><a href="/en/services.html">Services</a></li>
                 <li><a href="/en/projects.html">Projects</a></li>
-                <li><a href="/en/performances.html">Performances</a></li>
+                <li><a href="/en/publications.html">Publications</a></li>
                 <li><a href="/en/achievements.html">Achievements</a></li>
                 <li class="self-active"><a href="#">Contact</a></li>
             {% endcase %}
+            
+            <li><a href="http://blog.harfistka.eu.pl/{{ page.language | downcase }}/">Blog</a></li>
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>
