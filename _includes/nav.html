@@ -28,14 +28,14 @@
               {% when 'Usługi' %}
                 <li class="self-active"><a class="page-scroll" href="#">Usługi</a></li>
                 <li><a href="/pl/projects.html">Projekty</a></li>
-                <li><a href="/pl/Performances.html">Występy</a></li>
+                <li><a href="/pl/performances.html">Występy</a></li>
                 <li><a href="/pl/achievements.html">Osiągnięcia</a></li>
                 <li><a href="/pl/contact.html">Kontakt</a></li>    
 
               {% when 'Projekty' %}
                 <li class="self-highlight"><a href="/pl/services.html">Usługi</a></li>
                 <li class="self-active"><a class="page-scroll" href="#">Projekty</a></li>
-                <li><a href="/pl/Performances.html">Występy</a></li>
+                <li><a href="/pl/performances.html">Występy</a></li>
                 <li><a href="/pl/achievements.html">Osiągnięcia</a></li>
                 <li><a href="/pl/contact.html">Kontakt</a></li>
 
@@ -49,44 +49,49 @@
               {% when 'Osiągnięcia' %}
                 <li class="self-highlight"><a href="/pl/services.html">Usługi</a></li>
                 <li><a href="/pl/projects.html">Projekty</a></li>
-                <li><a href="/pl/Performances.html">Występy</a></li>
+                <li><a href="/pl/performances.html">Występy</a></li>
                 <li class="self-active"><a href="#">Osiągnięcia</a></li>
                 <li><a href="/pl/contact.html">Kontakt</a></li>
 
               {% when 'Kontakt' %}
                 <li class="self-highlight"><a href="/pl/services.html">Usługi</a></li>
                 <li><a href="/pl/projects.html">Projekty</a></li>
-                <li><a href="/pl/Performances.html">Występy</a></li>
+                <li><a href="/pl/performances.html">Występy</a></li>
                 <li><a href="/pl/achievements.html">Osiągnięcia</a></li>
                 <li class="self-active"><a href="#">Kontakt</a></li>
+				
               {% when 'Services' %}
                 <li class="self-active"><a class="page-scroll" href="#">Services</a></li>
                 <li><a href="/en/projects.html">Projects</a></li>
-                <li><a href="/en/Performances.html">Performances</a></li>
+                <li><a href="/en/performances.html">Performances</a></li>
                 <li><a href="/en/achievements.html">Achievements</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>    
 
               {% when 'Projects' %}
+				<li class="self-highlight"><a href="/en/services.html">Services</a></li>
                 <li class="self-active"><a class="page-scroll" href="#">Projects</a></li>
-                <li><a href="/en/Performances.html">Performances</a></li>
+                <li><a href="/en/performances.html">Performances</a></li>
                 <li><a href="/en/achievements.html">Achievements</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
                 
               {% when 'Performances' %}
+				<li class="self-highlight"><a href="/en/services.html">Services</a></li>
                 <li><a href="/en/projects.html">Projects</a></li>
                 <li class="self-active"><a href="#">Performances</a></li>
                 <li><a href="/en/achievements.html">Achievements</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
               
               {% when 'Achievements' %}
+				<li class="self-highlight"><a href="/en/services.html">Services</a></li>
                 <li><a href="/en/projects.html">Projects</a></li>
-                <li><a href="/en/Performances.html">Performances</a></li>
+                <li><a href="/en/performances.html">Performances</a></li>
                 <li class="self-active"><a href="#">Achievements</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
 
               {% when 'Contact' %}
+				<li class="self-highlight"><a href="/en/services.html">Services</a></li>
                 <li><a href="/en/projects.html">Projects</a></li>
-                <li><a href="/en/Performances.html">Performances</a></li>
+                <li><a href="/en/performances.html">Performances</a></li>
                 <li><a href="/en/achievements.html">Achievements</a></li>
                 <li class="self-active"><a href="#">Contact</a></li>
             {% endcase %}
