@@ -54,24 +54,37 @@
         </blockquote>
     {% endif %}
         
-    {% if performance.type == 'bachelor-thesis' %}
-      {% assign bachelor_thesis = performance %}
+    {% if performance.type == 'koncert' %}
+      {% assign koncert = performance %}
     {% endif %}
 
-    {% if performance.type == 'master-thesis' %}
-      {% assign master_thesis = performance %}
+    {% if performance.type == 'wystep' %}
+      {% assign wystep = performance %}
     {% endif %}
         
-    {% if performance.type == 'doctoral-thesis' %}
-      {% assign doctoral_thesis = performance %}
+    {% if performance.type == 'movie' %}
+      {% assign movie = performance %}
     {% endif %}
+	
+	{% if performance.type == 'theatre' %}
+      {% assign theatre = performance %}
+    {% endif %}
+	
+	{% if performance.type == 'radio' %}
+      {% assign radio = performance %}
+    {% endif %}
+	
   {% endfor %}
   
-    {% include thesis.html intro=intro.bachelor_thesis entry=bachelor_thesis urlname=intro.url %}
+    {% include thesis.html intro=intro.koncert entry=koncert urlname=intro.url %}
 
-    {% include thesis.html intro=intro.master_thesis entry=master_thesis urlname=intro.url %}
+    {% include thesis.html intro=intro.wystep entry=wystep urlname=intro.url %}
 
-    {% include thesis.html intro=intro.doctoral_thesis entry=doctoral_thesis urlname=intro.url %}
+    {% include thesis.html intro=intro.movie entry=movie urlname=intro.url %}
+	
+	{% include thesis.html intro=intro.theatre entry=theatre urlname=intro.url %}
+	
+	{% include thesis.html intro=intro.radio entry=radio urlname=intro.url %}
 
       </div><!-- /.container -->
 
