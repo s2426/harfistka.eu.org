@@ -1,0 +1,50 @@
+<!--Copyright (c) 2015-2018 s2426.-->
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+  {% include head.html %}
+  <body data-spy="scroll" data-target="#Scrollspy">
+    {% include nav.html %}
+    <div class="container" style='font-family: "Lucida Console", Monaco, monospace;'>
+      <div class="row">
+        <!-- Left Pills-->
+        <div class="col-xs-1" id="Scrollspy">
+          <ul class="nav nav-pills" data-spy="affix">
+            <li class=""><a class="page-scroll" href="#"></a></li>
+        {% assign sorted_variants = site.data.variants | sort %}
+        {% for variant_data in sorted_variants reversed %}
+          {% assign filename = variant_data[0] %}
+            <li class=""><a class="page-scroll" href="#id-{{ filename }}"></a></li>
+        {% endfor %}          
+          </ul>
+        </div> <!-- End Left Pills-->
+
+        <!-- Central Content -->
+        <div class="col-xs-10">
+          {% include variants-styles.html %}
+
+      {% for variant_data in sorted_variants reversed %}
+        {% assign filename = variant_data[0] %}  
+        {% assign variant = variant_data[1][page.language] %}          
+          <!-- #id-{{ filename }} -->
+          <section id="id-{{ filename }}" class="{{ variant.style }}">
+            <div class="page-header self-header-variant">
+              <h4>{{ variant.title }}</h4>
+              <h5 class="text-muted"><i class="far fa-clock"></i> {{ variant.date-string }}</h5>
+            </div>
+            <img data-holder-rendered="true" src="{{ variant.image }}" style="width: 200px; height: 200px;" data-src="holder.js/200x200" class="img-thumbnail" alt="200x200">
+            <div class='well' ><p>{{ variant.description }}</p></div>
+          {% if variant.extras != null %}
+            {{ variant.extras }}
+          {% endif %}
+          </section><!--/#id-{{ filename }}-->  
+      {% endfor %}    
+        </div><!-- End Central Content -->
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include global_scripts.html %}
+    {% include scrolling_nav_scripts.html %}
+    
+  </body>
+</html>

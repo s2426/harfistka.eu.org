@@ -1,0 +1,20 @@
+en:
+  title: 'Ska'
+  subtitle: 'Makumba'
+  header: "Album"
+  date-string: '3 may 2019'
+  icon: ''
+  description: >
+    English please.
+  widget: |
+    
+pl-PL:
+  title: 'Ska'
+  subtitle: 'Makumba'
+  header: "Album"
+  date-string: '3 maja 2019'
+  icon: ''
+  description: >
+    Po polskiemu.
+  widget: |
+    
