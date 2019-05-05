@@ -1,5 +1,5 @@
 ---
 title: Options
 layout: projects
-pl: /portfolio/pl-pl/projects.html
+pl: /portfolio/pl-pl/variants.html
 ---
