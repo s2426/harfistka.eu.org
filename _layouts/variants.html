@@ -10,9 +10,9 @@
         <div class="col-xs-1" id="Scrollspy">
           <ul class="nav nav-pills" data-spy="affix">
             <li class=""><a class="page-scroll" href="#"></a></li>
-        {% assign sorted_projects = site.data.projects | sort %}
-        {% for project_data in sorted_projects reversed %}
-          {% assign filename = project_data[0] %}
+        {% assign sorted_variants = site.data.variants | sort %}
+        {% for variant_data in sorted_variants reversed %}
+          {% assign filename = variant_data[0] %}
             <li class=""><a class="page-scroll" href="#id-{{ filename }}"></a></li>
         {% endfor %}          
           </ul>
@@ -20,21 +20,21 @@
 
         <!-- Central Content -->
         <div class="col-xs-10">
-          {% include projects-styles.html %}
+          {% include variants-styles.html %}
 
-      {% for project_data in sorted_projects reversed %}
-        {% assign filename = project_data[0] %}  
-        {% assign project = project_data[1][page.language] %}          
+      {% for variant_data in sorted_variants reversed %}
+        {% assign filename = variant_data[0] %}  
+        {% assign variant = variant_data[1][page.language] %}          
           <!-- #id-{{ filename }} -->
-          <section id="id-{{ filename }}" class="{{ project.style }}">
-            <div class="page-header self-header-project">
-              <h4>{{ project.title }}</h4>
-              <h5 class="text-muted"><i class="far fa-clock"></i> {{ project.date-string }}</h5>
+          <section id="id-{{ filename }}" class="{{ variant.style }}">
+            <div class="page-header self-header-variant">
+              <h4>{{ variant.title }}</h4>
+              <h5 class="text-muted"><i class="far fa-clock"></i> {{ variant.date-string }}</h5>
             </div>
-            <img data-holder-rendered="true" src="{{ project.image }}" style="width: 200px; height: 200px;" data-src="holder.js/200x200" class="img-thumbnail" alt="200x200">
-            <div class='well' ><p>{{ project.description }}</p></div>
-          {% if project.extras != null %}
-            {{ project.extras }}
+            <img data-holder-rendered="true" src="{{ variant.image }}" style="width: 200px; height: 200px;" data-src="holder.js/200x200" class="img-thumbnail" alt="200x200">
+            <div class='well' ><p>{{ variant.description }}</p></div>
+          {% if variant.extras != null %}
+            {{ variant.extras }}
           {% endif %}
           </section><!--/#id-{{ filename }}-->  
       {% endfor %}    
