@@ -2,9 +2,11 @@ en:
   title: Want music at wedding?
   credential: Harpist
   content: >
-    Can play at your wedding!
+   ## Can play at your wedding
+   # Dont miss it!
 pl-PL:
   title: Szukasz muzyki na ślub?
   credential: Harfistka
   content: >
-    Może zagrać na Twoim ślubie!
+   ## Może zagrać na Twoim ślubie
+   # Nie przegap okazji!
