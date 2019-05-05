@@ -1,20 +1,20 @@
 en:
-  title: 'Ska'
-  subtitle: 'Makumba'
-  header: "Album"
+  title: 'Experience 1'
+  subtitle: 'subtitle 1'
+  header: "Naglowek 1"
   date-string: '3 may 2019'
   icon: ''
   description: >
-    English please.
+    Decription 1.
   widget: |
     
 pl-PL:
-  title: 'Ska'
-  subtitle: 'Makumba'
-  header: "Album"
+  title: 'Doswiadczenie 1'
+  subtitle: 'podtytul 1'
+  header: "Naglowek 1"
   date-string: '3 maja 2019'
   icon: ''
   description: >
-    Po polskiemu.
+    Opis 1.
   widget: |
     
