@@ -91,7 +91,11 @@
                 <li class="self-active"><a href="#">Contact</a></li>
             {% endcase %}
             
-            <li><a href="http://blog.harfistka.eu.pl/{{ page.language | downcase }}/">Blog</a></li>
+            {% if page.language == 'en' %}
+            <li><a href="http://blog.harfistka.eu.pl/{{ page.language | downcase }}/">My Blog</a></li>
+          {% elsif page.language == 'pl-PL' %}
+            <li><a href="http://blog.harfistka.eu.pl/{{ page.language | downcase }}/">Mój Blog</a></li>
+          {% endif %}
 
           </ul>
         </div><!--/.nav-collapse -->
